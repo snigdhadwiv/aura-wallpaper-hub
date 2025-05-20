@@ -11,7 +11,7 @@ interface WallpaperCardProps {
 const WallpaperCard = ({ wallpaper, priority = false }: WallpaperCardProps) => {
   return (
     <Link to={`/wallpaper/${wallpaper.id}`} className="block">
-      <Card className="wallpaper-card h-full overflow-hidden border-0 rounded-xl shadow-md hover:shadow-lg">
+      <Card className="wallpaper-card group h-full overflow-hidden border-0 rounded-xl shadow-md hover:shadow-lg">
         <div className="relative pb-[56.25%]">
           <img
             src={wallpaper.thumbnailUrl}

@@ -81,9 +81,11 @@
   @apply overflow-hidden transition-all duration-300;
 }
 
-/* Add the group class separately instead of using it with @apply */
+/* Add the group class directly without @apply */
 .wallpaper-card {
-  @apply group;
+  /* The group class needs to be applied directly in HTML */
+  /* or added as a regular CSS class without @apply */
+  /* This will be handled in the component */
 }
 
 .wallpaper-card:hover img {
