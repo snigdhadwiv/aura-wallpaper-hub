@@ -78,7 +78,12 @@
 }
 
 .wallpaper-card {
-  @apply overflow-hidden transition-all duration-300 group;
+  @apply overflow-hidden transition-all duration-300;
+}
+
+/* Add the group class separately instead of using it with @apply */
+.wallpaper-card {
+  @apply group;
 }
 
 .wallpaper-card:hover img {
